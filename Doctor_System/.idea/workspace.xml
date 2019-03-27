@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MedicalManagement:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="39ef7697-1c98-44ee-9a7f-0139d0448ab3" name="Default" comment="IDEA创建MavenWeb项目整合ssm框架，提交到git">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hd/controller/main/HeadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hd/controller/main/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hd/controller/site/SiteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hd/controller/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hd/service/impl/SiteAdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hd/service/impl/SiteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hd/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/aside.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/orders-details.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/orders-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/permission-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/permission-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/product-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/product-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/role-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/role-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/role-permission-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/user-role-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/user-show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resident/diseaseAdd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resident/diseaseDistribute.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resident/diseaseList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resident/diseaseModify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/site-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/site-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/siteadmin/siteAdminList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/artifacts/Tobacco_Management_System_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/artifacts/Tobacco_Management_System_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__javax_javaee_api_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__jstl_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_aop_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_beans_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_context_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_core_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_expression_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_test_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_tx_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_web_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/MedicalManagement.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/HeadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/bill/AddBillController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/bill/BillListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/bill/ModifyBillController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/provider/AddProviderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/provider/ModifyProviderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/provider/ProviderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/user/AddUserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/user/ModifyUserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/controller/user/pwdModifyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/dao/BillMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/dao/ProviderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/dao/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/Bill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/Bo/ProviderBo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/Bo/UserInsertBo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/Bo/UserModifyBo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/Provider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/po/BillAddPo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/po/BillListPo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/response/BillListResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/response/ProviderResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/entity/response/UserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/service/BillListService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/service/impl/BillListServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/service/impl/providerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/java/com/hd/service/providerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/resources/mapper/BillMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/resources/mapper/ProviderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/resources/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/resources/spring-mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/resources/sql/UserSql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/bill/billList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/bill/billadd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/bill/billmodify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/provider/provideradd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/provider/providerlist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/provider/providermodify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/user/pwdmodify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/user/useradd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/user/userlist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/views/user/usermodify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/css/public.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/buy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/clock.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/formBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/gys.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/jg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/leftBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/loginBg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/login_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/login_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/mm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/read.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/schu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/tc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/tianjia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/xiugai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/yh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/images/zd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/billlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/providerjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/thirdparty/echarts.common.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/thirdparty/jquery-dateFormat.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/thirdparty/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/thirdparty/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/thirdparty/jquery.tmpl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/thirdparty/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/thirdparty/json2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/thirdparty/urlparam.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/src/main/webapp/resources/js/userjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/META-INF/Tobacco Management System.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/HeadController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/bill/AddBillController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/bill/BillListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/bill/ModifyBillController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/provider/AddProviderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/provider/ModifyProviderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/provider/ProviderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/user/AddUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/user/ModifyUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/controller/user/pwdModifyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/dao/BillMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/dao/ProviderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/Bill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/Bo/ProviderBo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/Bo/UserInsertBo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/Bo/UserModifyBo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/Provider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/po/BillAddPo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/po/BillListPo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/response/BillListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/response/ProviderResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/entity/response/UserResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/service/BillListService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/service/impl/BillListServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/service/impl/providerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/com/hd/service/providerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/mapper/BillMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/mapper/ProviderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/spring-mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/classes/sql/UserSql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/c3p0-0.9.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/jackson-annotations-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/jackson-core-2.8.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/jackson-databind-2.8.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/javaee-api-7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/javax.mail-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/logback-classic-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/logback-core-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/mchange-commons-java-0.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/mybatis-3.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/mybatis-spring-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/mysql-connector-java-5.1.41.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-beans-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-context-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-core-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-expression-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-jdbc-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-test-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-tx-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-web-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/lib/spring-webmvc-4.3.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/bill/billList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/bill/billadd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/bill/billmodify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/provider/provideradd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/provider/providerlist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/provider/providermodify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/user/pwdmodify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/user/useradd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/user/userlist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/views/user/usermodify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/css/public.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/buy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/clock.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/formBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/gys.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/jg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/leftBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/loginBg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/login_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/login_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/mm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/read.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/schu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/tc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/tianjia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/xiugai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/yh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/images/zd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/billlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/providerjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/thirdparty/echarts.common.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/thirdparty/jquery-dateFormat.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/thirdparty/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/thirdparty/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/thirdparty/jquery.tmpl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/thirdparty/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/thirdparty/json2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/thirdparty/urlparam.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/TestGit/resources/js/userjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/META-INF/Tobacco Management System.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/HeadController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/bill/AddBillController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/bill/BillListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/bill/ModifyBillController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/provider/AddProviderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/provider/ModifyProviderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/provider/ProviderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/user/AddUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/user/ModifyUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/controller/user/pwdModifyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/dao/BillMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/dao/ProviderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/Bill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/Bo/ProviderBo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/Bo/UserInsertBo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/Bo/UserModifyBo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/Provider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/po/BillAddPo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/po/BillListPo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/response/BillListResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/response/ProviderResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/entity/response/UserResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/service/BillListService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/service/impl/BillListServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/service/impl/providerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/com/hd/service/providerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/mapper/BillMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/mapper/ProviderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/spring-mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/classes/sql/UserSql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobacco Management System/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Tobacco_Management_System$newtest.ic" NAME="newtest Coverage Results" MODIFIED="1553060824648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/site.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/controller/site/SiteController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/service/impl/SiteServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/service/ISiteService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/dao/SiteMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="13" column="64" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SiteMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/site-list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/aside.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/resident.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="XSLT Stylesheet" />
+        <option value="HTML File" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ssm</find>
+      <find>subBtn</find>
+      <find>login-page</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bill/billmodify.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/controller/user/AddUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/controller/user/ModifyUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/controller/user/pwdModifyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/controller/user/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/Bo/ProviderBo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/Bo/UserInsertBo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/Bo/UserModifyBo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/po/BillAddPo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/po/BillListPo.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/useradd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/aside.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/Bo/auth_role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/auth_role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/user.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/site.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/resident.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/User.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/response/UserResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/login.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/response/SiteResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/service/impl/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/service/IUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ResidentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/dao/ResidentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/Site.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/po/SiteNameListPo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/entity/po/SiteListPo.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/resident.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/controller/HeadController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/dao/SiteMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/service/ISiteService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/controller/SiteController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/SiteMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hd/service/impl/SiteService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/site.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/site-list.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/.m2/repository" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="TestGit Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="TestGit Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="821" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552960945953" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="D:\bishe\Tobacco Management System\src\main\webapp\WEB-INF\views\provider" />
+      <recent name="D:\bishe\Tobacco Management System\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\bishe\Tobacco Management System\src\main\webapp\WEB-INF\views\bill" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="newtest" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8088/" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="MedicalManagement:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_TestGit-master" />
+        <option name="HTTP_PORT" value="8088" />
+        <option name="JNDI_PORT" value="1900" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57987" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MedicalManagement:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39ef7697-1c98-44ee-9a7f-0139d0448ab3" name="Default" comment="" />
+      <created>1531878076929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531878076929</updated>
+      <workItem from="1531878081667" duration="9334000" />
+      <workItem from="1531890430017" duration="15000" />
+      <workItem from="1531893261897" duration="958000" />
+      <workItem from="1549957744570" duration="1021000" />
+      <workItem from="1549958854153" duration="6475000" />
+      <workItem from="1550020555038" duration="401000" />
+      <workItem from="1550195290464" duration="18578000" />
+      <workItem from="1550218035536" duration="6168000" />
+      <workItem from="1550452056092" duration="33135000" />
+      <workItem from="1550538319043" duration="27066000" />
+      <workItem from="1550624117708" duration="19047000" />
+      <workItem from="1550712468321" duration="16729000" />
+      <workItem from="1550801529639" duration="21000" />
+      <workItem from="1550818402747" duration="116000" />
+      <workItem from="1551079433154" duration="462000" />
+      <workItem from="1551082953899" duration="933000" />
+      <workItem from="1551144681088" duration="32000" />
+      <workItem from="1551238668847" duration="634000" />
+      <workItem from="1551751997208" duration="168000" />
+      <workItem from="1552447186357" duration="43732000" />
+      <workItem from="1552961036038" duration="234000" />
+      <workItem from="1553060462700" duration="2130000" />
+      <workItem from="1553511650818" duration="549000" />
+    </task>
+    <task id="LOCAL-00001" summary="IDEA创建MavenWeb项目整合ssm框架，提交到git">
+      <created>1531887767068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531887767068</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="187938000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="821" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.26146132" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Nl-Palette" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.50209206" side_tool="true" weight="0.23592493" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.59697384" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4987874" weight="0.49243465" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.328594" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.60035527" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4995958" weight="0.38514444" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32971016" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.94671404" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Properties" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="CDI" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="12" weight="0.32983023" />
+      <window_info anchor="right" id="Maven" order="13" weight="0.3295129" />
+      <window_info anchor="right" id="Coverage" order="14" side_tool="true" weight="0.3295129" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.24355301" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Nl-Palette" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.50209206" side_tool="true" weight="0.23592493" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.59782606" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4987874" weight="0.5495169" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.328594" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.60035527" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4995958" weight="0.38647342" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.94671404" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Properties" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="CDI" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="12" weight="0.32983023" />
+      <window_info anchor="right" id="Maven" order="13" weight="0.3295129" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="IDEA创建MavenWeb项目整合ssm框架，提交到git" />
+    <option name="LAST_COMMIT_MESSAGE" value="IDEA创建MavenWeb项目整合ssm框架，提交到git" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/adminLTE/img/avatar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/adminLTE/img/photo4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/adminLTE/img/icons.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/adminLTE/img/photo2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/adminLTE/img/photo1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/chartjs/Chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap/images/arrows.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/paypal.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/mestro.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/paypal2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/photo4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/photo3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/photo2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/photo1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/photo8.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/role-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/product-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="138" column="40" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/center.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/orders-details.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/adminLTE/css/AdminLTE.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="4909" column="3" selection-start-line="4909" selection-start-column="3" selection-end-line="4909" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="103" selection-start-line="27" selection-start-column="103" selection-end-line="27" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/entity/response/UserResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" column="65" lean-forward="true" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/user-show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ResidentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/dao/ResidentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/entity/Site.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/entity/po/SiteNameListPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/entity/response/SiteResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/entity/po/SiteListPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/site-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/role-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/controller/main/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/controller/main/HeadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/controller/site/SiteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/service/impl/SiteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/service/ISiteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hd/dao/SiteMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SiteMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/other/aside.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/resident.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/site-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>MedicalManagement:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33179724" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MedicalManagement</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

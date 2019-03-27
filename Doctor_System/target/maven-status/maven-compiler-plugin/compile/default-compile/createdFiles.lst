@@ -1,0 +1,10 @@
+com/hd/controller/HeadController.class
+com/hd/dao/ResidentMapper.class
+com/hd/controller/LoginController.class
+com/hd/service/IUserService.class
+com/hd/entity/Resident.class
+com/hd/dao/SiteMapper.class
+com/hd/service/impl/UserService.class
+com/hd/dao/UserMapper.class
+com/hd/entity/Site.class
+com/hd/entity/User.class

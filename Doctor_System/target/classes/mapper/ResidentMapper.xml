@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hd.dao.ResidentMapper">
+
+
+
+   <update id="residentUpdate" parameterType="Integer">
+        update `resident` set siteid=#{0}
+        where siteid = #{siteid};
+    </update>
+
+   <!-- <select id="login" resultType="User" parameterType="String">
+        SELECT * FROM user
+        where email = #{email} and password = #{password}
+    </select>
+
+    <select id="selectUserList" resultType="User" >
+        select * from user
+        <where>
+            <if test="userName != null and userName != '' ">
+                username = #{userName}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectUserName" resultType="Integer">
+        select id from user where username = #{userName}
+    </select>
+
+    <select id="selectPassword" resultType="String">
+        select password from user where id = #{id}
+    </select>
+
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+        insert into `user` values(default,#{email},#{password},#{userName},#{userAddress},#{userPhone},#{sex},now());
+    </insert>
+
+    <delete id="deleteUser">
+        delete from `user` where id = #{id};
+    </delete>
+
+    <update id="modifyUser">
+        update `user` set username=#{username},sex=#{sex},userAddress=#{userAddress},userPhone=#{userPhone}
+        where id = #{id};
+    </update>
+
+    <update id="pwdModifyUser">
+        update `user` set password = #{password}
+        where id = #{id};
+    </update>-->
+
+</mapper>

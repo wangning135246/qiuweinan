@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hd.dao.SiteMapper">
+
+
+    <select id="selectSiteNameAndTime" resultType="SiteNameListPo" >
+        SELECT id,name as siteName,status,createdate as createDate FROM site
+        <where>
+            <if test="siteName != null">
+                name = #{siteName}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectSiteName" resultType="String" parameterType="Integer">
+        select name from site where id = #{id}
+    </select>
+
+    <insert id="insertSite" keyProperty="id">
+            insert into `site` values(default,#{name},#{status},now());
+    </insert>
+
+    <delete id="deleteSite">
+            delete from `site` where id = #{id};
+    </delete>
+
+    <update id="modifySite">
+            update `site` set name=#{name},status=#{status}
+            where id = #{id};
+    </update>
+
+</mapper>
