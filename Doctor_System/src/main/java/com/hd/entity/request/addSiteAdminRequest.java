@@ -4,16 +4,29 @@ import java.io.Serializable;
 
 public class addSiteAdminRequest implements Serializable {
 
+    /**
+     * 管理者的姓名
+     */
     private String siteName;
-
+    /**
+     * 管理者的账号
+     */
     private String siteAdminAccount;
-
+    /**
+     * 管理者的密码
+     */
     private String password;
-
+    /**
+     * 电话
+     */
     private String phone;
-
+    /**
+     * 分站的名称
+     */
     private String siteNames;
-
+    /**
+     * 管理者的地址
+     */
     private String address;
 
     public String getSiteName() {

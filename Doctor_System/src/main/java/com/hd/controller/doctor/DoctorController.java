@@ -30,8 +30,14 @@ public class DoctorController {
     }
 
     @RequestMapping("/modifyIndex")
-    public ModelAndView modifyIndex(){
+    public ModelAndView modifyIndex(String id,String name,String account,String phone,String adminName,String residentCount){
         ModelAndView view = new ModelAndView("doctor/doctorModify");
+        view.addObject("id",id);
+        view.addObject("account",account);
+        view.addObject("phone",phone);
+        view.addObject("adminName",adminName);
+        view.addObject("residentCount",residentCount);
+        view.addObject("name",name);
         return view;
     }
 

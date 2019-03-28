@@ -1,4 +1,9 @@
 
+$(document).ready(function() {
+
+    selectSiteAdminList();
+
+});
 
 /**
  * 这是查询信息的方法

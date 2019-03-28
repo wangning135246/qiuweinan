@@ -1,4 +1,8 @@
+$(document).ready(function() {
 
+    selectSiteList();
+
+});
 
 /**
  * 这是查询信息的方法

@@ -18,9 +18,9 @@ function GetUrl(address)
         }else if(address == 2){
             box.attr("src","http://localhost:8080/siteAdmin/index");
         }else if(address == 3){
-            $("#Box").attr("src","http://localhost:8080/userList/index");
-        }else{
-            $("#Box").attr("src","http://localhost:8080/pwdModify/index?userName="+$("#userName").html());
+            $("#Box").attr("src","http://localhost:8080/doctor/index");
+        }else if(address == 0){
+            $("#Box").attr("src","http://localhost:8080/successLogin/index1");
         }
     }
     catch(e)

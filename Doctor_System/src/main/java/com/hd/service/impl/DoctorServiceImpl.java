@@ -4,6 +4,8 @@ import com.hd.dao.ResidentMapper;
 import com.hd.dao.UserMapper;
 import com.hd.entity.User;
 import com.hd.entity.po.DoctorListPo;
+import com.hd.entity.request.addDoctorRequest;
+import com.hd.entity.request.addSiteAdminRequest;
 import com.hd.entity.response.DoctorListResponse;
 import com.hd.service.IDoctorService;
 import org.springframework.stereotype.Service;
@@ -28,6 +30,23 @@ public class DoctorServiceImpl implements IDoctorService {
         //查询出所有医生的信息
         List<User> list =  userMapper.selectBeautifulUSer("医生");
         List<DoctorListPo> listPo = new ArrayList<>();
+        if(name != null){
+            List<DoctorListPo> listPo2 = new ArrayList<>();
+            for(User po:list){
+                DoctorListPo listPo3 =  new DoctorListPo();
+                if(po.getName().equals(name)){
+                    listPo3.setId(po.getId());
+                    listPo3.setAccount(po.getAccount());
+                    listPo3.setCreateTime(po.getCreateDate());
+                    listPo3.setPhone(po.getPhone());
+                    listPo3.setDoctorName(po.getName());
+                    listPo3.setResidentCount(String.valueOf(residentMapper.selectResidentCount(String.valueOf(po.getId()))));
+                    listPo.add(listPo3);
+                    response.setData(listPo);
+                    return response;
+                }
+            }
+        }
         for(User po : list){
             DoctorListPo listPo1 =  new DoctorListPo();
             listPo1.setId(po.getId());
@@ -42,4 +61,13 @@ public class DoctorServiceImpl implements IDoctorService {
         return response;
     }
 
+    @Override
+    public int insertDoctor(addDoctorRequest request) {
+        int a = userMapper.insertAdminUser(request.getDoctorName(),request.getSiteAdminAccount(),
+                request.getPassword(),request.getPhone(),request.getSiteName(),
+                request.getAddress());
+        User user = userMapper.selectSiteAdmin(request.getDoctorName());
+        userMapper.insertAuth_user_role(String.valueOf(user.getId()),String.valueOf(2));
+        return a;
+    }
 }

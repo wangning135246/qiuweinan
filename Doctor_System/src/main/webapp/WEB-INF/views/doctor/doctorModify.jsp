@@ -71,14 +71,14 @@
 			<!-- 内容头部 -->
 			<div class="content-header">
 			<h1>
-				站点管理 <small>修改站点</small>
+				医生管理 <small>修改医生信息</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/user/findAll">站点管理</a></li>
-				<li class="active">修改站点</li>
+					href="${pageContext.request.contextPath}/user/findAll">医生管理</a></li>
+				<li class="active">修改医生信息</li>
 			</ol>
 			</div>
 			<!-- 内容头部 /-->
@@ -87,42 +87,49 @@
 				<div class="content"> <!--产品信息-->
 
 				<div class="panel panel-default">
-					<div class="panel-heading">站点信息</div>
+					<div class="panel-heading">修改信息</div>
 					<div class="row data-type">
+
+<%--
+						"<a class=\"btn bg-olive btn-xs\" href='http://localhost:8080/siteAdmin/modifyIndex?id=\""+item.id+"\"&name=\""+item.siteName+"\"&phone=\""+item.phone+"\"&residentCount=\""+item.residentCount+"\"&account=\""+item.account+"\"&adminName=\""+item.doctorName+"\"'><img src=\"../resources/images/xiugai.png\" alt=\"修改\" title=\"修改\"/></a>"+
+--%>
 
 							<div class="col-md-2 title">站点名称</div>
 							<div class="col-md-4 data">
-								<input type="text" id = "siteName" class="form-control" name="siteName"
+								<input readonly="readonly" type="text" id = "siteName" class="form-control" name="siteName"
 									    value=${name}>
 							</div>
 
 
-						<div class="col-md-2 title">站点管理员数量</div>
+						<div class="col-md-2 title">医生的姓名</div>
 						<div class="col-md-4 data">
 							<input readonly="readonly" type="text" id = "siteAdmin" class="form-control" name="siteAdmin"
-								 value=${adminCount}>
+								 value=${adminName}>
 						</div>
 
-						<div class="col-md-2 title">该站点医生的数量</div>
+						<div class="col-md-2 title">医生的账户</div>
 						<div class="col-md-4 data">
-							<input readonly="readonly" type="text" id = "siteNames" class="form-control" name="doctor"
-								 value=${doctorCount}>
+							<input  type="text" id = "account" class="form-control" name="doctor"
+									value=${account}>
 						</div>
 
-						<div class="col-md-2 title">站点状态</div>
+						<div class="col-md-2 title">医生的电话</div>
 						<div class="col-md-4 data">
-							<select id = "status" class="form-control select2" style="width: 100%"
-								name="status">
-								<option value="0" selected="selected">关闭</option>
-								<option value="1">开启</option>
-							</select>
+							<input  type="text" id = "siteNames" class="form-control" name="doctor"
+								 value=${phone}>
+						</div>
+
+						<div class="col-md-2 title">管理居民的数量</div>
+						<div class="col-md-4 data">
+							<input  type="text" id = "residentCount" class="form-control" name="doctor"
+									value=${residentCount}>
 						</div>
 
 					</div>
 				</div>
 				<!--订单信息/--> <!--工具栏-->
 				<div class="box-tools text-center">
-					<button type="submit" class="btn bg-maroon" onclick="javascript:modifySite();">保存</button>
+					<button type="submit" class="btn bg-maroon" onclick="javascript:modifyDoctor();">保存</button>
 					<button type="button" class="btn bg-default"
 						onclick="javascript:addSiteJump();">返回</button>
 				</div>
@@ -130,7 +137,7 @@
 
 				</div>
 		<!-- 内容区域 /-->
-		<input type="hidden" id = "id" class="form-control" name="siteName" value=${id}>
+		<input type="hidden" id = "id" class="form-control" name="id" value=${id}>
 
 
 	<script

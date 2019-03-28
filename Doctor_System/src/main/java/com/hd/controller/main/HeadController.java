@@ -14,4 +14,10 @@ public class HeadController {
         view.addObject("userName",userName);
         return view;
     }
+
+    @RequestMapping("/index1")
+    public ModelAndView successIndex(){
+        ModelAndView view = new ModelAndView("main/photo");
+        return view;
+    }
 }
