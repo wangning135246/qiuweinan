@@ -1,5 +1,6 @@
 package com.hd.service;
 
+import com.hd.entity.request.addSiteAdminRequest;
 import com.hd.entity.response.SiteListResponse;
 import org.apache.ibatis.annotations.Param;
 
@@ -20,5 +21,7 @@ public interface ISiteAdminService {
      * @return
      */
     int modifyAdminUser(String id,String name,String phone);
+
+     int insertAdminUser(addSiteAdminRequest request);
 
 }

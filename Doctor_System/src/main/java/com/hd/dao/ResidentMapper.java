@@ -11,4 +11,11 @@ public interface ResidentMapper {
      */
     Integer residentUpdate(@Param("siteid")String siteid);
 
+    /**
+     * 查询属于某医生下的居民的数量
+     * @param id
+     * @return
+     */
+    int selectResidentCount(@Param("id")String id);
+
 }

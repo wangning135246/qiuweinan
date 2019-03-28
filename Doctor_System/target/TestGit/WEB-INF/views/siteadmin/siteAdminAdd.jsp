@@ -71,14 +71,14 @@
 			<!-- 内容头部 -->
 			<div class="content-header">
 			<h1>
-				站点管理 <small>新建站点</small>
+				站点管理 <small>新建管理员</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/user/findAll">站点管理</a></li>
-				<li class="active">新建站点</li>
+					href="${pageContext.request.contextPath}/user/findAll">分站管理员管理</a></li>
+				<li class="active">新建管理员</li>
 			</ol>
 			</div>
 			<!-- 内容头部 /-->
@@ -90,38 +90,53 @@
 					<div class="panel-heading">站点信息</div>
 					<div class="row data-type">
 
-						<div class="col-md-2 title">站点名称</div>
+						<div class="col-md-2 title">管理员名字</div>
 						<div class="col-md-4 data">
 							<input type="text" id = "siteName" class="form-control" name="siteName"
 								placeholder="站点名称" value="">
 						</div>
 
-						<div class="col-md-2 title">站点管理员</div>
+						<div class="col-md-2 title">管理员的账号</div>
 						<div class="col-md-4 data">
-							<input type="text" id = "siteAdmin" class="form-control" name="siteAdmin"
+							<input type="text" id = "siteAdminAccount" class="form-control" name="siteAdmin"
 								placeholder="站点管理员" value="">
 						</div>
 
-						<div class="col-md-2 title">该站点医生</div>
+						<div class="col-md-2 title">第一次输入密码</div>
 						<div class="col-md-4 data">
-							<input type="text" id = "siteNames" class="form-control" name="doctor"
-								placeholder="医生姓名：用英文，分开" value="">
+							<input type="password" id = "siteAdminPasswordOne" class="form-control" name="siteAdmin"
+								   placeholder="第一次输入密码" value="">
 						</div>
 
-						<div class="col-md-2 title">站点状态</div>
+						<div class="col-md-2 title">请再次输入密码</div>
 						<div class="col-md-4 data">
-							<select id = "status" class="form-control select2" style="width: 100%"
-								name="status">
-								<option value="0" selected="selected">关闭</option>
-								<option value="1">开启</option>
-							</select>
+							<input type="password" id = "siteAdminPasswordTwo" class="form-control" name="siteAdmin"
+								   placeholder="请再次输入密码" value="">
+						</div>
+
+						<div class="col-md-2 title">管理员的手机号</div>
+						<div class="col-md-4 data">
+							<input type="text" id = "phone" class="form-control" name="phone"
+								   placeholder="管理员的手机号" value="">
+						</div>
+
+						<div class="col-md-2 title">管辖的辖区</div>
+						<div class="col-md-4 data">
+							<input type="text" id = "siteNames" class="form-control" name="siteNames"
+								placeholder="管辖的辖区" value="">
+						</div>
+
+						<div class="col-md-2 title">辖区的地址</div>
+						<div class="col-md-4 data">
+							<input type="text" id = "address" class="form-control" name="address"
+								   placeholder="管辖的辖区" value="">
 						</div>
 
 					</div>
 				</div>
 				<!--订单信息/--> <!--工具栏-->
 				<div class="box-tools text-center">
-					<button type="submit" class="btn bg-maroon" onclick="javascript:addSite();">保存</button>
+					<button type="submit" class="btn bg-maroon" onclick="javascript:addSiteAdmin();">保存</button>
 					<button type="button" class="btn bg-default"
 						onclick="javascript:addSiteJump();">返回</button>
 				</div>
@@ -214,7 +229,7 @@
 		src="../../../resources/plugins/bootstrap-slider/bootstrap-slider.js"></script>
 	<script
 		src="../../../resources/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
-	<script src="../../../resources/js/site.js"></script>
+	<script src="../../../resources/js/siteAdmin.js"></script>
 
 
 

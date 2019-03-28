@@ -85,7 +85,7 @@
                             <div class="form-group form-inline">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default" title="新建站点"
-                                            onclick="'">
+                                            onclick="window.location='http://localhost:8080/siteAdmin/addIndex'">
                                         <i class="fa fa-file-o"></i> 新增管理员
                                     </button>
                                     <button type="button" class="btn btn-default" title="删除选中"
@@ -93,7 +93,7 @@
                                             class="fa fa-trash-o"></i> 删除选中
                                     </button>
                                     <button type="button" class="btn btn-default" title="组织站点分配"
-                                            onclick=''><i class="fa fa-check"></i> 组织站点分配
+                                            onclick="window.location='http://localhost:8080/siteAdmin/adminDistribute'"><i class="fa fa-check"></i> 组织站点分配
                                     </button>
                                     <button type="button" class="btn btn-default"
                                             onclick="javascript:selectSiteAdminList()"><i

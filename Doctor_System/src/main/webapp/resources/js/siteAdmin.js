@@ -71,7 +71,7 @@ function addSiteAdmin(){
         cache: false,
         data: {
             "siteName":$("#siteName").val(),
-            "siteAdmin":$("#siteAdminAccount").val(),
+            "siteAdminAccount":$("#siteAdminAccount").val(),
             "password":password,
             "phone":$("#phone").val(),
             "siteNames":$("#siteNames").val(),

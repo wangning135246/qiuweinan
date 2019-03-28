@@ -79,4 +79,20 @@ public interface UserMapper {
      * @return
      */
     List<User> selectBeautifulUSer(@Param("name")String name);
+
+    /**
+     * 添加分站管理员的方法
+     * @return
+     */
+    int insertAdminUser(@Param("name")String name,@Param("account")String account,
+                        @Param("password")String password,@Param("phone")String phone,
+                        @Param("sitename")String sitename,@Param("address")String address);
+
+    /**
+     * 添加角色的方法
+     * @param userId
+     * @param roleId
+     * @return
+     */
+    int insertAuth_user_role(@Param("userId")String userId,@Param("roleId")String roleId);
 }

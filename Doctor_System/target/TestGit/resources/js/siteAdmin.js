@@ -55,22 +55,33 @@ function insertHtml(data){
 /**
  * 这个是添加站点的方法
  */
-function addSite(){
+function addSiteAdmin(){
+   var one =  $("#siteAdminPasswordOne").val()
+    var two = $("#siteAdminPasswordTwo").val()
+    var password;
+    if(one != two){
+        alert("两次输入的密码不同，请重新输入！！")
+        return;
+    }else{
+        password = $("#siteAdminPasswordOne").val();
+    }
     $.ajax({
-        url: '/siteList/insertSite',
+        url: '/siteAdmin/insertSiteAdmin',
         type: 'post',
         cache: false,
         data: {
-            "name":$("#siteName").val(),
-            "siteAdmin":$("#siteAdmin").val(),
-            "doctorName":$("#siteNames").val(),
-            "status":$("#status").val()
+            "siteName":$("#siteName").val(),
+            "siteAdminAccount":$("#siteAdminAccount").val(),
+            "password":password,
+            "phone":$("#phone").val(),
+            "siteNames":$("#siteNames").val(),
+            "address":$("#address").val()
         },
         dataType: 'json',
         success: function (data) {
             if(data != null){
                 alert("提交成功！！");
-                window.location.href="http://localhost:8080/siteList/siteIndex";
+                window.location.href="http://localhost:8080/siteAdmin/index";
             }
         },
         error: function (data) {
@@ -80,9 +91,9 @@ function addSite(){
 }
 
 /**
- * 这个是修改站点的方法
+ * 这个是修改分站管理员的方法
  */
-function modifySite(){
+function modifySiteAdmin(){
     $.ajax({
         url: '/siteAdmin/modifyAdminUser',
         type: 'post',

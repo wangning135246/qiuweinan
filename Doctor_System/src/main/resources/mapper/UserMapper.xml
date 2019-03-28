@@ -56,22 +56,27 @@
         where id = #{id};
     </update>
 
-    <!--<insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
-        insert into `user` values(default,#{email},#{password},#{userName},#{userAddress},#{userPhone},#{sex},now());
+    <insert id="insertAdminUser"  keyProperty="id">
+        insert into `auth_user` values(default,#{name},#{account}#{password},#{phone},#{sitename},#{address},now());
     </insert>
 
-    <delete id="deleteUser">
-        delete from `user` where id = #{id};
-    </delete>
+    <insert id="insertAuth_user_role" keyProperty="id">
+        insert into `auth_user_role` values(default,#{roleId},#{userId});
+    </insert>
 
-    <update id="modifyUser">
-        update `user` set username=#{username},sex=#{sex},userAddress=#{userAddress},userPhone=#{userPhone}
-        where id = #{id};
-    </update>
+    <!--
+        <delete id="deleteUser">
+            delete from `user` where id = #{id};
+        </delete>
 
-    <update id="pwdModifyUser">
-        update `user` set password = #{password}
-        where id = #{id};
-    </update>-->
+        <update id="modifyUser">
+            update `user` set username=#{username},sex=#{sex},userAddress=#{userAddress},userPhone=#{userPhone}
+            where id = #{id};
+        </update>
+
+        <update id="pwdModifyUser">
+            update `user` set password = #{password}
+            where id = #{id};
+        </update>-->
 
 </mapper>

@@ -4,6 +4,7 @@ import com.hd.dao.SiteMapper;
 import com.hd.dao.UserMapper;
 import com.hd.entity.User;
 import com.hd.entity.po.SiteAdminListPo;
+import com.hd.entity.request.addSiteAdminRequest;
 import com.hd.entity.response.SiteListResponse;
 import com.hd.service.ISiteAdminService;
 import org.springframework.stereotype.Service;
@@ -101,5 +102,15 @@ public class SiteAdminServiceImpl implements ISiteAdminService {
     @Override
     public int modifyAdminUser(String id, String name, String phone) {
         return userMapper.modifyAdminUser(id,name,phone);
+    }
+
+    @Override
+    public int insertAdminUser(addSiteAdminRequest request) {
+        int a = userMapper.insertAdminUser(request.getSiteName(),request.getSiteAdminAccount(),
+                request.getPassword(),request.getPhone(),request.getSiteNames(),
+                request.getAddress());
+        User user = userMapper.selectSiteAdmin(request.getSiteName());
+        userMapper.insertAuth_user_role(String.valueOf(user.getId()),String.valueOf(3));
+        return a;
     }
 }

@@ -214,7 +214,7 @@
 		src="../../../resources/plugins/bootstrap-slider/bootstrap-slider.js"></script>
 	<script
 		src="../../../resources/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
-	<script src="../../../resources/js/site.js"></script>
+	<script src="../../../resources/js/siteAdmin.js"></script>
 
 
 

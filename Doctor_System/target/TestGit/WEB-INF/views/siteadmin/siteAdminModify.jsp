@@ -127,7 +127,7 @@
 				</div>
 				<!--订单信息/--> <!--工具栏-->
 				<div class="box-tools text-center">
-					<button type="submit" class="btn bg-maroon" onclick="javascript:modifySite();">保存</button>
+					<button type="submit" class="btn bg-maroon" onclick="javascript:modifySiteAdmin();">保存</button>
 					<button type="button" class="btn bg-default"
 						onclick="javascript:addSiteJump();">返回</button>
 				</div>

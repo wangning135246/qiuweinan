@@ -3,7 +3,10 @@
 
 <mapper namespace="com.hd.dao.ResidentMapper">
 
-
+    <select id="selectResidentCount" resultType="Integer" parameterType="String">
+        SELECT count(1) FROM resident
+        where doctorid=#{id}
+    </select>
 
    <update id="residentUpdate" parameterType="Integer">
         update `resident` set siteid=#{0}

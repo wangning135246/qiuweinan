@@ -1,6 +1,7 @@
 package com.hd.controller.siteAdmin;
 
 
+import com.hd.entity.request.addSiteAdminRequest;
 import com.hd.entity.response.SiteListResponse;
 import com.hd.service.impl.SiteAdminServiceImpl;
 import org.springframework.stereotype.Controller;
@@ -24,6 +25,18 @@ public class SiteAdminController {
         return view;
     }
 
+    @RequestMapping("/addIndex")
+    public ModelAndView addIndex(){
+        ModelAndView view = new ModelAndView("siteadmin/siteAdminAdd");
+        return view;
+    }
+
+    @RequestMapping("/adminDistribute")
+    public ModelAndView adminDistribute(){
+        ModelAndView view = new ModelAndView("siteadmin/siteAdminDistribute");
+        return view;
+    }
+
     @RequestMapping("/modifyIndex")
     public ModelAndView modifyIndex(String id,String name,String phone,String doctorCount,String account,String adminName){
         ModelAndView view = new ModelAndView("siteadmin/siteAdminModify");
@@ -40,19 +53,31 @@ public class SiteAdminController {
     @RequestMapping("/selectSiteAdmin")
     @ResponseBody
     public SiteListResponse selectSiteAdmin(String name){
-       return   siteAdminService.selectAdminList(name);
+        return   siteAdminService.selectAdminList(name);
     }
 
+    /**
+     * 修改分站管理员的方法
+     * @param id
+     * @param name
+     * @param phone
+     * @return
+     */
     @RequestMapping("/modifyAdminUser")
     @ResponseBody
     public int modifyAdminUser(String id,String name,String phone){
         return siteAdminService.modifyAdminUser(id,name,phone);
     }
 
+    /**
+     * 添加分站管理员的方法
+     * @param request
+     * @return
+     */
     @RequestMapping("/insertSiteAdmin")
     @ResponseBody
-    public int insertSiteAdmin(){
-        return siteAdminService.modifyAdminUser(id,name,phone);
+    public int insertSiteAdmin(addSiteAdminRequest request){
+        return siteAdminService.insertAdminUser(request);
     }
 
 
