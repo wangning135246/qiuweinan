@@ -6,11 +6,13 @@ import com.hd.entity.User;
 import com.hd.entity.po.DoctorListPo;
 import com.hd.entity.response.DoctorListResponse;
 import com.hd.service.IDoctorService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class DoctorServiceImpl implements IDoctorService {
 
 
