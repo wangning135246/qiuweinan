@@ -48,7 +48,7 @@ function insertHtml(data){
         html += "<td>"+item.residentCount+"</td>";
         html += "<td>"+item.createTime+"</td>";
         html += "<td>" +
-            "<a class=\"btn bg-olive btn-xs\" href='http://localhost:8080/siteAdmin/modifyIndex?id=\""+item.id+"\"&name=\""+item.siteName+"\"&phone=\""+item.phone+"\"&doctorCount=\""+item.residentCount+"\"&account=\""+item.account+"\"&adminName=\""+item.doctorName+"\"'><img src=\"../resources/images/xiugai.png\" alt=\"修改\" title=\"修改\"/></a>"+
+            "<a class=\"btn bg-olive btn-xs\" href='http://localhost:8080/doctor/modifyIndex?id=\""+item.id+"\"&phone=\""+item.phone+"\"&residentCount=\""+item.residentCount+"\"&account=\""+item.account+"\"&adminName=\""+item.doctorName+"\"'><img src=\"../resources/images/xiugai.png\" alt=\"修改\" title=\"修改\"/></a>"+
             "</td>";
         html += "</tr>";
     });
@@ -56,7 +56,7 @@ function insertHtml(data){
 }
 
 /**
- * 这个是添加站点的方法
+ * 这个是添加医生的方法
  */
 function addDoctor(){
     var one =  $("#siteAdminPasswordOne").val()
@@ -69,22 +69,22 @@ function addDoctor(){
         password = $("#siteAdminPasswordOne").val();
     }
     $.ajax({
-        url: '/siteAdmin/insertSiteAdmin',
+        url: '/doctor/addDoctor',
         type: 'post',
         cache: false,
         data: {
-            "siteName":$("#siteName").val(),
+            "doctorName":$("#siteName").val(),
             "siteAdminAccount":$("#siteAdminAccount").val(),
             "password":password,
             "phone":$("#phone").val(),
-            "siteNames":$("#siteNames").val(),
+            "siteName":$("#siteNames").val(),
             "address":$("#address").val()
         },
         dataType: 'json',
         success: function (data) {
             if(data != null){
                 alert("提交成功！！");
-                window.location.href="http://localhost:8080/siteAdmin/index";
+                window.location.href="http://localhost:8080/doctor/index";
             }
         },
         error: function (data) {
@@ -94,11 +94,11 @@ function addDoctor(){
 }
 
 /**
- * 这个是修改分站管理员的方法
+ * 这个是修改医生的方法
  */
-function modifySiteAdmin(){
+function modifyDoctor(){
     $.ajax({
-        url: '/siteAdmin/modifyAdminUser',
+        url: '/doctor/modifyDoctor',
         type: 'post',
         cache: false,
         data: {
@@ -110,7 +110,7 @@ function modifySiteAdmin(){
         success: function (data) {
             if(data != null){
                 alert("修改成功！！");
-                window.location.href="http://localhost:8080/siteAdmin/index";
+                window.location.href="http://localhost:8080/doctor/index";
                 selectSiteAdminList();
             }
         },
@@ -121,5 +121,5 @@ function modifySiteAdmin(){
 }
 
 function  addSiteJump() {
-    window.location.href="http://localhost:8080/siteAdmin/index";
+    window.location.href="http://localhost:8080/doctor/index";
 }

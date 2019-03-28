@@ -1,6 +1,7 @@
 package com.hd.service.impl;
 
 
+import com.hd.dao.ResidentMapper;
 import com.hd.dao.SiteMapper;
 import com.hd.dao.UserMapper;
 import com.hd.entity.po.SiteListPo;
@@ -22,6 +23,9 @@ public class SiteServiceImpl implements ISiteService {
 
     @Resource
     UserMapper userMapper;
+
+    @Resource
+    ResidentMapper residentMapper;
 
     /**
      * 查询站点下的站点管理员和医生
@@ -101,6 +105,7 @@ public class SiteServiceImpl implements ISiteService {
     public Integer deleteSite(Integer id) {
         String siteName = siteMapper.selectSiteName(id);
         userMapper.modifyUserSite(siteName);
+        residentMapper.residentUpdate(String.valueOf(id));
         return siteMapper.deleteSite(id);
     }
 

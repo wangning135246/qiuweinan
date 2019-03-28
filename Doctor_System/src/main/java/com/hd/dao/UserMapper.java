@@ -95,4 +95,18 @@ public interface UserMapper {
      * @return
      */
     int insertAuth_user_role(@Param("userId")String userId,@Param("roleId")String roleId);
+
+    /**
+     * 根据id查询用户的名字的方法
+     * @param id
+     * @return
+     */
+    String selectAdminName(@Param("id")String id);
+
+    /**
+     * 查询医生的方法
+     * @param name
+     * @return
+     */
+     int selectDoctorId(@Param("name")String name);
 }

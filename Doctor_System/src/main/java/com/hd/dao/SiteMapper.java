@@ -41,4 +41,11 @@ public interface SiteMapper {
      * @return
      */
      Integer modifySite(@Param("id")Integer id,@Param("name")String name,@Param("status")Integer status);
+
+    /**
+     * 查询siteID的方法
+     * @param name
+     * @return
+     */
+     int selectSiteId(@Param("name")String name);
 }

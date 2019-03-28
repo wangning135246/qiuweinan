@@ -48,7 +48,7 @@ function insertHtml(data){
         html += "<td>"+item.residentCount+"</td>";
         html += "<td>"+item.createTime+"</td>";
         html += "<td>" +
-            "<a class=\"btn bg-olive btn-xs\" href='http://localhost:8080/doctor/index1?id=\""+item.id+"\"&name=\""+item.siteName+"\"&phone=\""+item.phone+"\"&residentCount=\""+item.residentCount+"\"&account=\""+item.account+"\"&adminName=\""+item.doctorName+"\"'><img src=\"../resources/images/xiugai.png\" alt=\"修改\" title=\"修改\"/></a>"+
+            "<a class=\"btn bg-olive btn-xs\" href='http://localhost:8080/doctor/modifyIndex?id=\""+item.id+"\"&phone=\""+item.phone+"\"&residentCount=\""+item.residentCount+"\"&account=\""+item.account+"\"&adminName=\""+item.doctorName+"\"'><img src=\"../resources/images/xiugai.png\" alt=\"修改\" title=\"修改\"/></a>"+
             "</td>";
         html += "</tr>";
     });
@@ -69,15 +69,15 @@ function addDoctor(){
         password = $("#siteAdminPasswordOne").val();
     }
     $.ajax({
-        url: '/siteAdmin/insertSiteAdmin',
+        url: '/doctor/addDoctor',
         type: 'post',
         cache: false,
         data: {
-            "siteName":$("#siteName").val(),
+            "doctorName":$("#siteName").val(),
             "siteAdminAccount":$("#siteAdminAccount").val(),
             "password":password,
             "phone":$("#phone").val(),
-            "siteNames":$("#siteNames").val(),
+            "siteName":$("#siteNames").val(),
             "address":$("#address").val()
         },
         dataType: 'json',
@@ -98,7 +98,7 @@ function addDoctor(){
  */
 function modifyDoctor(){
     $.ajax({
-        url: '/siteAdmin/modifyAdminUser',
+        url: '/doctor/modifyDoctor',
         type: 'post',
         cache: false,
         data: {

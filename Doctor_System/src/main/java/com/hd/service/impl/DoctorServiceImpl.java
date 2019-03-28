@@ -24,6 +24,11 @@ public class DoctorServiceImpl implements IDoctorService {
     @Resource
     ResidentMapper residentMapper;
 
+    /**
+     * 查询医生列表的方法
+     * @param name
+     * @return
+     */
     @Override
     public DoctorListResponse selectDoctorList(String name) {
         DoctorListResponse response = new DoctorListResponse();
@@ -61,11 +66,33 @@ public class DoctorServiceImpl implements IDoctorService {
         return response;
     }
 
+    /**
+     * 修改医生的方法
+     * @param id
+     * @param name
+     * @param phone
+     * @return
+     */
+    @Override
+    public int modifyAdminUser(String id, String name, String phone) {
+        return userMapper.modifyAdminUser(id,name,phone);
+    }
+
+    /**
+     * 添加医生的方法
+     * @param request
+     * @return
+     */
     @Override
     public int insertDoctor(addDoctorRequest request) {
-        int a = userMapper.insertAdminUser(request.getDoctorName(),request.getSiteAdminAccount(),
-                request.getPassword(),request.getPhone(),request.getSiteName(),
-                request.getAddress());
+        int a = 0;
+        try {
+             a = userMapper.insertAdminUser(request.getDoctorName(), request.getSiteAdminAccount(),
+                    request.getPassword(), request.getPhone(), request.getSiteName(),
+                    request.getAddress());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         User user = userMapper.selectSiteAdmin(request.getDoctorName());
         userMapper.insertAuth_user_role(String.valueOf(user.getId()),String.valueOf(2));
         return a;

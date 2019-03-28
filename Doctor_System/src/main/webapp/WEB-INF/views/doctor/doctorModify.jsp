@@ -90,38 +90,27 @@
 					<div class="panel-heading">修改信息</div>
 					<div class="row data-type">
 
-<%--
-						"<a class=\"btn bg-olive btn-xs\" href='http://localhost:8080/siteAdmin/modifyIndex?id=\""+item.id+"\"&name=\""+item.siteName+"\"&phone=\""+item.phone+"\"&residentCount=\""+item.residentCount+"\"&account=\""+item.account+"\"&adminName=\""+item.doctorName+"\"'><img src=\"../resources/images/xiugai.png\" alt=\"修改\" title=\"修改\"/></a>"+
---%>
-
-							<div class="col-md-2 title">站点名称</div>
-							<div class="col-md-4 data">
-								<input readonly="readonly" type="text" id = "siteName" class="form-control" name="siteName"
-									    value=${name}>
-							</div>
-
-
 						<div class="col-md-2 title">医生的姓名</div>
 						<div class="col-md-4 data">
-							<input readonly="readonly" type="text" id = "siteAdmin" class="form-control" name="siteAdmin"
+							<input  type="text" id = "adminName" class="form-control" name="siteAdmin"
 								 value=${adminName}>
 						</div>
 
 						<div class="col-md-2 title">医生的账户</div>
 						<div class="col-md-4 data">
-							<input  type="text" id = "account" class="form-control" name="doctor"
+							<input readonly="readonly" type="text" id = "account" class="form-control" name="doctor"
 									value=${account}>
 						</div>
 
 						<div class="col-md-2 title">医生的电话</div>
 						<div class="col-md-4 data">
-							<input  type="text" id = "siteNames" class="form-control" name="doctor"
+							<input  type="text" id = "phone" class="form-control" name="doctor"
 								 value=${phone}>
 						</div>
 
 						<div class="col-md-2 title">管理居民的数量</div>
 						<div class="col-md-4 data">
-							<input  type="text" id = "residentCount" class="form-control" name="doctor"
+							<input readonly="readonly" type="text" id = "residentCount" class="form-control" name="doctor"
 									value=${residentCount}>
 						</div>
 
@@ -222,7 +211,7 @@
 		src="../../resources/plugins/bootstrap-slider/bootstrap-slider.js"></script>
 	<script
 		src="../../resources/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
-	<script src="../../resources/js/site.js"></script>
+	<script src="../../resources/js/doctor.js"></script>
 
 
 

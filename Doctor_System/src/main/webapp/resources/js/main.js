@@ -21,6 +21,12 @@ function GetUrl(address)
             $("#Box").attr("src","http://localhost:8080/doctor/index");
         }else if(address == 0){
             $("#Box").attr("src","http://localhost:8080/successLogin/index1");
+        }else if(address == 4){
+            $("#Box").attr("src","http://localhost:8080/resident/index");
+        }else if(address == 5){
+            $("#Box").attr("src","http://localhost:8080/group/index");
+        }else if(address == 6){
+            $("#Box").attr("src","http://localhost:8080/disease/index");
         }
     }
     catch(e)

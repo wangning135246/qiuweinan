@@ -1,6 +1,7 @@
 package com.hd.controller.doctor;
 
 
+import com.hd.entity.request.addDoctorRequest;
 import com.hd.entity.response.DoctorListResponse;
 import com.hd.service.impl.DoctorServiceImpl;
 import org.springframework.stereotype.Controller;
@@ -56,6 +57,30 @@ public class DoctorController {
     @ResponseBody
     public DoctorListResponse selectDoctor(String name) {
         return doctorService.selectDoctorList(name);
+    }
+
+    /**
+     * 修改医生信息的方法
+     * @param id
+     * @param name
+     * @param phone
+     * @return
+     */
+    @RequestMapping("/modifyDoctor")
+    @ResponseBody
+    public int modifyDoctor(String id,String name,String phone){
+        return doctorService.modifyAdminUser(id,name,phone);
+    }
+
+    /**
+     * 添加医生的方法
+     * @param request
+     * @return
+     */
+    @RequestMapping("/addDoctor")
+    @ResponseBody
+    public int insertDoctor(addDoctorRequest request){
+        return doctorService.insertDoctor(request);
     }
 
 }

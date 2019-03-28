@@ -8,49 +8,32 @@
         where doctorid=#{id}
     </select>
 
-   <update id="residentUpdate" parameterType="Integer">
-        update `resident` set siteid=#{0}
-        where siteid = #{siteid};
-    </update>
-
-   <!-- <select id="login" resultType="User" parameterType="String">
-        SELECT * FROM user
-        where email = #{email} and password = #{password}
-    </select>
-
-    <select id="selectUserList" resultType="User" >
-        select * from user
+    <select id="selectResident" resultType="Resident" parameterType="String">
+        select * from resident
         <where>
-            <if test="userName != null and userName != '' ">
-                username = #{userName}
+            <if test=" name != null and name != '' ">
+                name = #{name}
             </if>
         </where>
     </select>
 
-    <select id="selectUserName" resultType="Integer">
-        select id from user where username = #{userName}
-    </select>
+   <update id="residentUpdate" parameterType="Integer">
+        update `resident` set siteid=0
+        where siteid = #{siteid};
+    </update>
 
-    <select id="selectPassword" resultType="String">
-        select password from user where id = #{id}
-    </select>
-
-    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
-        insert into `user` values(default,#{email},#{password},#{userName},#{userAddress},#{userPhone},#{sex},now());
+    <insert id="insertResident"  keyProperty="id">
+        insert into `resident` values(default,#{name},#{phone},#{siteId},#{doctorId},1,#{diseaseLable},now(),now());
     </insert>
 
-    <delete id="deleteUser">
-        delete from `user` where id = #{id};
-    </delete>
-
-    <update id="modifyUser">
-        update `user` set username=#{username},sex=#{sex},userAddress=#{userAddress},userPhone=#{userPhone}
+    <update id="modifyResident" parameterType="String">
+        update `resident` set name = #{name},phone = #{phone},siteid = #{siteId},doctorid = #{doctorId},diseaselable = #{diseaseLable}
         where id = #{id};
     </update>
 
-    <update id="pwdModifyUser">
-        update `user` set password = #{password}
-        where id = #{id};
-    </update>-->
+    <update id="modifyDoctorId" parameterType="String">
+        update `resident` set doctorid = 0
+        where doctorid = #{doctorid};
+    </update>
 
 </mapper>

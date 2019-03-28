@@ -85,7 +85,7 @@
                             <div class="form-group form-inline">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default" title="新建站点"
-                                            onclick="">
+                                            onclick="window.location='http://localhost:8080/doctor/addIndex'">
                                         <i class="fa fa-file-o"></i> 新增医生
                                     </button>
                                     <button type="button" class="btn btn-default" title="删除选中"
@@ -95,7 +95,7 @@
                                     <button type="button" class="btn btn-default" title="组织站点分配"
                                             onclick=''><i class="fa fa-check"></i> 组织站点分配
                                     </button>
-                                    <button type="button" class="btn bg-default" title="查询"
+                                    <button type="button" class="btn btn-default" title="查询"
                                             onclick="javascript:selectDoctorList()"><i
                                             class="btn bg-default"></i> 查询
                                     </button>

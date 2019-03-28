@@ -56,12 +56,12 @@
         <section class="content-header">
             <h1>
                 系统管理
-                <small>分站管理员管理</small>
+                <small>居民管理</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="http://localhost:8080/successLogin/index"><i class="fa fa-dashboard"></i> 首页</a></li>
                 <li><a href="#">系统管理</a></li>
-                <li class="active">分站管理员管理</li>
+                <li class="active">居民管理</li>
             </ol>
         </section>
         <!-- 内容头部 /-->
@@ -85,18 +85,18 @@
                             <div class="form-group form-inline">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default" title="新建站点"
-                                            onclick="'">
-                                        <i class="fa fa-file-o"></i> 新增管理员
-                                    </button>xxx
+                                            onclick="window.location='http://localhost:8080/resident/addIndex'">
+                                        <i class="fa fa-file-o"></i> 新增居民
+                                    </button>
                                     <button type="button" class="btn btn-default" title="删除选中"
                                             onclick="javascript:deleteCheck();"><i
                                             class="fa fa-trash-o"></i> 删除选中
                                     </button>
                                     <button type="button" class="btn btn-default" title="组织站点分配"
-                                            onclick=''><i class="fa fa-check"></i> 组织站点分配
+                                            onclick=''><i class="fa fa-check"></i> 更换小组
                                     </button>
-                                    <button type="button" class="btn bg-default" title="查询"
-                                            onclick="javascript:selectSiteAdminList()"><i
+                                    <button type="button" class="btn btn-default" title="查询"
+                                            onclick="javascript:selectResident()"><i
                                             class="btn bg-default"></i> 查询
                                     </button>
                                 </div>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="box-tools pull-right" >
                             <div class="has-feedback">
-                                <input type="text" id = "siteName" class="form-control input-sm" placeholder="请输入管理员的名字" >
+                                <input type="text" id = "name" class="form-control input-sm" placeholder="请输入居民的名字" >
                             </div>
                         </div>
 
@@ -116,19 +116,18 @@
                             <tr>
                                 <th>选择</th>
                                 <th class="sorting_asc">序号</th>
-                                <th class="sorting_asc">登陆账户</th>
-                                <th class="sorting_asc">分站管理员姓名</th>
-                                <th class="sorting_asc">联系电话</th>
-                                <th class="sorting_asc">管辖的医生数量</th>
-                                <th class="sorting_asc">创建时间</th>
-                                <th class="sorting_asc">组织站点名称</th>
+                                <th class="sorting_asc">居民姓名</th>
+                                <th class="sorting_asc">居民电话</th>
+                                <th class="sorting_asc">最后测量时间</th>
+                                <th class="sorting_asc">组织站点</th>
+                                <th class="sorting_asc">小组</th>
+                                <th class="sorting_asc">疾病标签</th>
                                 <th class="text-center">操作</th>
-
                             </tr>
                             </thead>
-                                <tbody id = "content">
+                            <tbody id = "content">
 
-                                </tbody>
+                            </tbody>
                         </table>
                     </div>
 
@@ -186,7 +185,7 @@
 <script src="../../../resources/plugins/bootstrap-slider/bootstrap-slider.js"></script>
 <script src="../../../resources/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
 <script src="../../../resources/plugins/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
-<script src="../../../resources/js/siteAdmin.js"></script>
+<script src="../../../resources/js/resident.js"></script>
 
 
 </body>

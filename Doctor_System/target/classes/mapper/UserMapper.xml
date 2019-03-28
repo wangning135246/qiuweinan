@@ -3,6 +3,14 @@
 
 <mapper namespace="com.hd.dao.UserMapper">
 
+    <select id="selectAdminName" resultType="String" parameterType="String">
+        select name from auth_user
+        where id = #{id}
+    </select>
+
+    <select id="selectDoctorId" parameterType="String" resultType="Integer">
+        select id from auth_user where name = #{name}
+    </select>
 
     <select id="selectAllUser" resultType="User">
         select * from auth_user
@@ -57,7 +65,7 @@
     </update>
 
     <insert id="insertAdminUser"  keyProperty="id">
-        insert into `auth_user` values(default,#{name},#{account}#{password},#{phone},#{sitename},#{address},now());
+        insert into `auth_user` values(default,#{name},#{account},#{password},#{phone},#{sitename},#{address},now());
     </insert>
 
     <insert id="insertAuth_user_role" keyProperty="id">
