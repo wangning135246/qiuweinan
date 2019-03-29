@@ -105,8 +105,27 @@ public class SiteServiceImpl implements ISiteService {
     public Integer deleteSite(Integer id) {
         String siteName = siteMapper.selectSiteName(id);
         userMapper.modifyUserSite(siteName);
-        residentMapper.residentUpdate(String.valueOf(id));
+        residentMapper.residentUpdate(id);
         return siteMapper.deleteSite(id);
+    }
+
+    /**
+     *这个是删除选中站点的方法
+     * @param id
+     * @return
+     */
+    @Override
+    public Integer deleteCheckedSite(String id) {
+        String[] strings = id.split(",");
+        int a = 0;
+        for(int i = 0 ; i < strings.length ; i++){
+            int ids  = Integer.parseInt(strings[i]);
+            String siteName = siteMapper.selectSiteName(ids);
+            userMapper.modifyUserSite(siteName);
+            residentMapper.residentUpdate(ids);
+             a = siteMapper.deleteSite(ids);
+        }
+        return a;
     }
 
     /**

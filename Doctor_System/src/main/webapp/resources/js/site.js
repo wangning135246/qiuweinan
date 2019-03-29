@@ -40,7 +40,7 @@ function insertHtml(data){
     var html = "";
     $.each(data, function(index, item){
         html += "<tr>";
-        html += "<td>"+"<input name=\"ids\" type=\"checkbox\">"+"</td>";
+        html += "<td>"+"<input  name=\"ids\" type=\"checkbox\" value='"+item.id+"'>"+"</td>";
         html += "<td>"+item.id+"</td>";
         html += "<td>"+item.siteName+"</td>";
         html += "<td>"+item.siteCount+"</td>";
@@ -56,6 +56,17 @@ function insertHtml(data){
     $("#content").html(html);
 }
 
+function allDelete() {
+    var list = document.getElementsByName("ids");
+    var str = "";
+    $.each(list, function (index, item) {
+        if(item.checked == true){
+            str += item.value + ",";
+        }
+    });
+    allRemove(str);
+}
+
 /**
  * 查询站点的状态
  * @param status
@@ -67,6 +78,30 @@ function selectStatus(status) {
         return "关闭"
     }
 }
+
+/**
+ * 这个是删除选中的方法
+ * @param id
+ */
+function allRemove(str){
+    $.ajax({
+        url: '/siteList/deleteCheckedSite',
+        type: 'post',
+        cache: false,
+        data: {
+            "id": str
+        },
+        dataType: 'json',
+        success: function (data) {
+            alert("删除成功！！");
+            selectSiteList();
+        },
+        error: function (data) {
+            alert("服务器异常！！！");
+        }
+    });
+}
+
 /**
  * 这个是删除站点的方法
  * @param id

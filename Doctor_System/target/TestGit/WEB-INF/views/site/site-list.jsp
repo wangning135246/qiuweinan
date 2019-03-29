@@ -89,7 +89,7 @@
                                         <i class="fa fa-file-o"></i> 新建站点
                                     </button>
                                     <button type="button" class="btn btn-default" title="删除选中"
-                                            onclick="javascript:deleteCheck();"><i
+                                            onclick="javascript:allDelete();"><i
                                             class="fa fa-trash-o"></i> 删除选中
                                     </button>
                                     <button type="button" class="btn btn-default" title="查询"

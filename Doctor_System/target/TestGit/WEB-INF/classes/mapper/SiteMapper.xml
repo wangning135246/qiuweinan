@@ -13,6 +13,10 @@
         </where>
     </select>
 
+    <select id="selectAllSiteName" resultType="String">
+        select name from site
+    </select>
+
     <select id="selectSiteId" resultType="Integer" parameterType="String">
         select id from site where name = #{name}
     </select>

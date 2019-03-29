@@ -1,5 +1,9 @@
 
+$(document).ready(function() {
 
+    GetUrl(0);
+
+});
 
 
 
@@ -27,6 +31,8 @@ function GetUrl(address)
             $("#Box").attr("src","http://localhost:8080/group/index");
         }else if(address == 6){
             $("#Box").attr("src","http://localhost:8080/disease/index");
+        }else if(address == 7){
+            $("#Box").attr("src","http://localhost:8080/disease/index1");
         }
     }
     catch(e)

@@ -73,6 +73,18 @@ public class SiteController {
     }
 
     /**
+     * 删除站点的方法
+     * @return
+     */
+    @RequestMapping("/deleteCheckedSite")
+    @ResponseBody
+    public int deleteCheckedSite(String id){
+
+        return siteService.deleteCheckedSite(id);
+
+    }
+
+    /**
      * 修改站点的方法
      * @return
      */

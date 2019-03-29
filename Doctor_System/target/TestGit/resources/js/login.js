@@ -20,14 +20,9 @@ function login(){
         },
         dataType: 'json',
         success: function (data) {
-            if(data.data != null){
+            if(data.data == "超级管理员"){
                 alert("登陆成功！！！！");
-                if(data.data == "超级管理员"){
-                    window.location.href="http://localhost:8080/successLogin/index"
-                }else{
-
-                }
-                window.location.href="http://localhost:8080/successLogin/index";
+                window.location.href="http://localhost:8080/successLogin/index"
             }else{
                 alert("账号或密码有误，请重新输入！！");
                 reset();

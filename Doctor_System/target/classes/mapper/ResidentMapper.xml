@@ -8,6 +8,14 @@
         where doctorid=#{id}
     </select>
 
+    <select id="selectDisease" resultType="com.hd.entity.po.DiseasePo">
+        select diseaselable,count(1) as sum from resident group by diseaselable
+    </select>
+
+    <select id="selectAllResident" resultType="com.hd.entity.Resident">
+        select * from resident
+    </select>
+
     <select id="selectResident" resultType="Resident" parameterType="String">
         select * from resident
         <where>

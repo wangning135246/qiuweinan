@@ -1,8 +1,7 @@
 package com.hd.dao;
 
 import com.hd.entity.Resident;
-import com.hd.entity.request.AddResidentRequest;
-import com.hd.entity.request.ModifyResidentRequest;
+import com.hd.entity.po.DiseasePo;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -14,7 +13,7 @@ public interface ResidentMapper {
      * @param siteid
      * @return
      */
-    Integer residentUpdate(@Param("siteid")String siteid);
+    Integer residentUpdate(@Param("siteid")Integer siteid);
 
     /**
      * 查询属于某医生下的居民的数量
@@ -49,4 +48,16 @@ public interface ResidentMapper {
      * @return
      */
     int modifyDoctorId(@Param("doctorid")String doctorId);
+
+    /**
+     * 查询疾病标签
+     * @return
+     */
+    List<DiseasePo> selectDisease();
+
+    /**
+     * 查询所有的居民
+     * @return
+     */
+    List<Resident> selectAllResident();
 }

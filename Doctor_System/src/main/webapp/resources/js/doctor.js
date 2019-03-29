@@ -4,6 +4,15 @@ $(document).ready(function() {
 
 });
 
+var tValue;
+setInterval(function(event){
+    if(tValue !=document.getElementById("txt").value){
+
+        //这里写自己的业务逻辑代码
+        tValue =document.getElementById("txt").value;
+    }
+},100);
+
 /**
  * 这是查询信息的方法
  */

@@ -129,6 +129,10 @@
 										onclick="javascript:GetUrl(6)">
 									<i class="fa fa-circle-o"></i> 疾病标签
 								</a></li>
+								<li id="system-setting6"><a
+										onclick="javascript:GetUrl(7)">
+									<i class="fa fa-circle-o"></i> 分配情况
+								</a></li>
 
 							</ul></li>
 
@@ -141,7 +145,7 @@
 		<div class="content-wrapper">
 			<%--<img src="../../resources/images/center.jpg"
 				width="100%" height="100%" />--%>
-			<iframe type = "hidden" width="1200" height="700" id="Box" frameborder="1" scrolling="0"></iframe>
+			<iframe type = "hidden" width="1200" height="800" id="Box" frameborder="1" scrolling="0"></iframe>
 		</div>
 		<!-- 内容区域 /-->
 

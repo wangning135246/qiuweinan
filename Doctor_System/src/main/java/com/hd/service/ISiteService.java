@@ -33,4 +33,11 @@ public interface ISiteService {
      * @return
      */
     Integer modifySite(Integer id,String name,Integer status);
+
+    /**
+     * 删除选中站点的方法
+     * @param id
+     * @return
+     */
+    public Integer deleteCheckedSite(String id);
 }

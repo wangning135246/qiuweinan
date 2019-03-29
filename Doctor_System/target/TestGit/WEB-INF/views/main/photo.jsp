@@ -64,12 +64,11 @@
 	href="../../../resources/plugins/bootstrap-slider/slider.css">
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body background="../../resources/images/center.jpg" background-size:100%;>
 
 		<!-- 内容区域 -->
 
-			<img src="../../resources/images/center.jpg"
-				width="100%" height="100%" />
+
 
 		<!-- 内容区域 /-->
 

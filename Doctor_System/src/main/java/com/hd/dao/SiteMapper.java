@@ -48,4 +48,10 @@ public interface SiteMapper {
      * @return
      */
      int selectSiteId(@Param("name")String name);
+
+    /**
+     * 查询出所有的站点名字
+     * @return
+     */
+    List<String> selectAllSiteName();
 }
